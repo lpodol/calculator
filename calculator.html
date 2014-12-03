@@ -1,0 +1,44 @@
+<html>
+  <body>
+    <input id = "first" type = "textbox">
+    <input id = "second" type = "textbox">
+    <br></br>
+    <button id = "add" onclick = "addnumbers()">+</button>
+    <button id = "subtract" onclick = "subnumbers()">-</button>
+    <button id = "multiply" onclick = "multnumbers()">x</button>
+    <button id = "divide" onclick="divnumbers()">%</button>
+    <br></br>
+    <input id = "answer" type = "textbox">
+    <script>
+
+    var addnumbers = function(){
+      var x = parseInt(document.querySelector("#first").value);
+      var y = parseInt(document.querySelector("#second").value);
+      var sum = x + y;
+      answer.value = sum;
+    }
+
+    var subnumbers = function(){
+      var x = parseInt(document.querySelector("#first").value);
+      var y = parseInt(document.querySelector("#second").value);
+      var difference = x - y;
+      answer.value = difference;
+    }
+
+    var multnumbers = function(){
+      var x = parseInt(document.querySelector("#first").value);
+      var y = parseInt(document.querySelector("#second").value);
+      var multiplication = x*y;
+      answer.value = multiplication;
+    }
+
+    var divnumbers = function(){
+      var x = parseInt(document.querySelector("#first").value);
+      var y = parseInt(document.querySelector("#second").value);
+      var division = x/y;
+      answer.value = division;
+    }
+
+    </script>
+  </body>
+</html>
