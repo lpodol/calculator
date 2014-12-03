@@ -6,7 +6,7 @@
     <button id = "add" onclick = "addnumbers()">+</button>
     <button id = "subtract" onclick = "subnumbers()">-</button>
     <button id = "multiply" onclick = "multnumbers()">x</button>
-    <button id = "divide" onclick="divnumbers()">%</button>
+    <button id = "divide" onclick = "divnumbers()">%</button>
     <br></br>
     <input id = "answer" type = "textbox">
     <script>
@@ -36,9 +36,11 @@
       var x = parseInt(document.querySelector("#first").value);
       var y = parseInt(document.querySelector("#second").value);
       var division = x/y;
+      if((x === 0) || (y === 0)){
+        alert("Congratulations. You have created a small black hole in the surface of the earth.");
+      }
       answer.value = division;
     }
-
     </script>
   </body>
 </html>
